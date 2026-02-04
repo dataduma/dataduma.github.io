@@ -367,9 +367,9 @@ article {
 }
 
  ol {
-  padding-left: 1.5em;
-  margin: 1em 0;
-  font-size: 0.9rem;
+  padding-left: 1.6em;
+  margin-top: 2rem;margin-bottom: 2rem;
+  font-size: 0.8rem;
   line-height: 1.6;
 }
 
@@ -382,7 +382,7 @@ li {
 
  
 ol li::before {
-  content: "›";
+  content: " ";
   position: absolute;
   left: 0;
   color: #666;
@@ -393,7 +393,5 @@ ol {
   list-style: none;
 }
 
-intro {
-	
-}
+ 
  

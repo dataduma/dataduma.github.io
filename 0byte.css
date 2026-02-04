@@ -366,7 +366,32 @@ article {
 	text-decoration: none; color: #00008B;
 }
 
+ul, ol {
+  padding-left: 1.5em;
+  margin: 1em 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
 
+li {
+  position: relative;
+  padding-left: 1.2em;
+  margin-bottom: 0.6em;
+ 
+}
+
+ul li::before,
+ol li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: #666;
+  font-weight: bold;
+}
+
+ol {
+  list-style: none;
+}
 
 intro {
 	

@@ -367,31 +367,17 @@ article {
 }
 
  ol {
-  padding-left: 1.6em;
-  margin-top: 2rem;margin-bottom: 2rem;
+  padding-left: 1.6rem;
+  margin-top: 5px;margin-bottom: 5px;
   font-size: 0.8rem;
   line-height: 1.6;
 }
 
 li {
   position: relative;
-  padding-left: 1.2em;
-  margin-bottom: 0.6em;
- 
+  margin-left: 10px;
+  
 }
 
- 
-ol li::before {
-  content: " ";
-  position: absolute;
-  left: 0;
-  color: #666;
-  font-weight: bold;
-}
-
-ol {
-  list-style: none;
-}
-
- 
+  
  

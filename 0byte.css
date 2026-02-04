@@ -370,3 +370,88 @@ article {
 intro {
 	
 }
+/* Add / update these styles */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.modal-menu {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #111;
+  color: white;
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.close-btn:focus {
+  outline: 3px solid #0066cc;
+  outline-offset: 2px;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+
+.nav-menu a {
+  display: block;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.nav-menu a:focus {
+  background: #0066cc;
+  outline: none;
+}
+
+/* Trap focus when open (basic CSS-only version) */
+#menu-toggle:checked ~ .modal-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Improved keyboard focus visibility */
+a:focus, button:focus, label[for="menu-toggle"]:focus {
+  outline: 3px solid #0066cc;
+  outline-offset: 2px;
+}
